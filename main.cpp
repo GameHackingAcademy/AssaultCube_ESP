@@ -76,6 +76,8 @@ __declspec(naked) void codecave() {
 		if (x > 2400 || x < 0 || y < 0 || y > 1800) {
 			text = "";
 		}
+		
+		x += 200;
 
 		// Invoke the print text function to display the text
 		__asm {
